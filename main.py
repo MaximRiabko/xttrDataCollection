@@ -66,7 +66,7 @@ def get_products_links(item_name='наушники hyperx'):
 
 def main():
     print('[INFO] Сбор данных начался. Пожалуйста ожидайте...')
-    get_products_links(item_name='наушники hyperx')
+    get_products_links(item_name='новогодние игрушки')
     print('[INFO] Работа выполнена успешно!')
 
 
