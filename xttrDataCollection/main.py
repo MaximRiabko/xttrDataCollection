@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from functions import page_down, collect_product_info
 
 
-def get_products_links(item_name='наушники hyperx'):
+def get_products_links(item_name='новогодние игрушки'):
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
