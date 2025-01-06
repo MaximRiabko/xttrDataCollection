@@ -145,15 +145,15 @@ def parser(url: str, low_price: int = 1, top_price: int = 1000000, discount: int
 
 
 if __name__ == '__main__':
-    while True:
-        try:
-            url = input('Введите ссылку на категорию без фильтров для сбора(или "q" для выхода):\n')
-            if url == 'q':
-                break
+    try:
+        url = input('Введите ссылку на категорию без фильтров для сбора(или "q" для выхода):\n')
+        if url == 'q':
+            print('Завершение программы')
+        else:
             low_price = int(input('Введите минимальную сумму товара: '))
             top_price = int(input('Введите максимульную сумму товара: '))
             discount = int(input('Введите минимальную скидку(введите 0 если без скидки): '))
             parser(url=url, low_price=low_price, top_price=top_price, discount=discount)
-        except:
-            print('произошла ошибка данных при вводе, проверте правильность введенных данных,\n'
-                  'Перезапуск...')
+    except:
+        print('произошла ошибка данных при вводе, проверте правильность введенных данных,\n'
+              'Перезапуск...')
